@@ -20,7 +20,7 @@ const routes: Array<RouteObject> = [
     element: <RequestTopic />,
   },
   {
-    path: "/topic/:topicName/schema/request",
+    path: "/topic/:topicName/request/schema",
     element: <SchemaRequest />,
   },
   {
