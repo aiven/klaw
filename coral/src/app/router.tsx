@@ -3,6 +3,7 @@ import NotFound from "src/app/pages/not-found";
 import Topics from "src/app/pages/topics";
 import { getRouterBasename } from "src/config";
 import RequestTopic from "src/app/pages/topics/request";
+import SchemaRequest from "src/app/pages/topics/schema-request";
 
 const routes: Array<RouteObject> = [
   // Login is currently the responsibility of the
@@ -17,6 +18,10 @@ const routes: Array<RouteObject> = [
   {
     path: "/topics/request",
     element: <RequestTopic />,
+  },
+  {
+    path: "/topic/:topicName/schema/request",
+    element: <SchemaRequest />,
   },
   {
     path: "*",
